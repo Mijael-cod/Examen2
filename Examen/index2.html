@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/estilos2.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+  <div class="caj">
+    <div class="head">
+      <i id="img1" class="fa fa-cog" aria-hidden="true"></i>
+
+      <h1>REGISTRO DE ESTUDIANTE</h1>
+    </div>
+    <div class="head1"></div>
+    <div class="container1">
+
+      <h2>Nombres:</h2><br>
+      <input type="text" id="nombre"><br>
+
+      <h2>Sexo:</h2>
+      <form>
+        <input type="radio" name="hola" id="hombre">Hombre<input type="radio" name="hola" id="mujer">Mujer
+      </form>
+
+      <div class="ciclo" ><br>
+        <h2>Ciclo</h2>
+        <select name="Seleccionar Ciclo:" id="ciclo">
+          <option value="0" selected>Seleccionar Ciclo</option>
+          <option value="1">I</option>
+          <option value="2">II</option>
+          <option value="3">III</option>
+          <option value="4">IV</option>
+          <option value="5">V</option>
+          <option value="6">VI</option>
+          <option value="7">VII</option>
+          <option value="8">VIII</option>
+          <option value="9">IX</option>
+          <option value="10">X</option>
+        </select>
+      </div>
+      <div class="ESCUELA" ><br>
+        <H2>Escuela Profesional:</H2>
+        <select name="Escuela profesional" id="escuela">
+          <option value="0">Seleccionar Escuela</option>
+          <option value="1">Sistemas</option>
+          <option value="2">Alimentos</option>
+          <option value="3">Ambiental</option>
+          <option value="4">Arquitectura</option>
+          <option value="5">Civil</option>
+        </select>
+      </div>
+      <br>
+      <button class="boton" onclick="agregar()">AGREGAR</button>
+
+    </div>
+    <div class="container2">
+      <h1>Lista de Datos</h1>
+      <hr>
+      <br>
+      <br>
+      <table id="table">
+        <thead>
+          <tr>
+            <th class="th">Item</th>
+            <th class="th1">Nombres</th>
+            <th class="th2">Sexo</th>
+            <th class="th3">Ciclo</th>
+            <th class="th4">Escuela Profesional</th>
+            <th class="th5" colspan="2">Accion</th>
+          </tr>
+        </thead>
+        <tbody id="tbd"></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="js/script3.js"></script>
+</body>
+
+</html>
